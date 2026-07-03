@@ -445,7 +445,7 @@ button { font: inherit; }
 /* ===== Responsive ===== */
 @media (max-width: 860px) {
   .nav__links { display: none !important; }
-  .nav__toggle { display: inline-flex !important; }
+  .nav__toggle { display: inline-flex !important; margin-left: auto }
   .split, .why-grid, .contact-grid, .showcase__grid { grid-template-columns: 1fr !important; gap: 32px !important; }
   .why-media { min-height: 320px !important; }
   .showcase__detail { grid-template-columns: 1fr !important; }
