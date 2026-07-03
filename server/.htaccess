@@ -1,0 +1,16 @@
+# Block direct HTTP access to secrets and internals in this folder.
+# contact.php itself stays reachable — it's the only intended entry point.
+
+<FilesMatch "(^\.env.*|\.example$)">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order allow,deny
+        Deny from all
+    </IfModule>
+</FilesMatch>
+
+<IfModule mod_autoindex.c>
+    Options -Indexes
+</IfModule>

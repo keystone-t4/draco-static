@@ -1,0 +1,15 @@
+# Secrets
+server/.env
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+.claude
+
+# Node (only used transiently for image optimization, not part of the deployed site)
+node_modules/
+
+# Old Claude Design source (large binary export, kept locally for reference only)
+_archive/
